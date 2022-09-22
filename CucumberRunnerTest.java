@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/main/resources/features",
         glue = "stepDefintion"
         Aparna
-//       tags = "@TagChangebyBhumika",
+//       tags = "@Bhumika",
 //        tags = "@by AparnaD",
  master
 //        plugin = {"pretty","html:target/report/cucumber.html",
