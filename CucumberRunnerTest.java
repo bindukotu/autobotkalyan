@@ -4,10 +4,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/main/resources/features",
         glue = "stepDefintion"
-        Aparna
 //       tags = "@TagChangebyBhumika",
 //        tags = "@Second Time Upadated By Aparna",
- master
+//        tags = "Niktiha",
 //        plugin = {"pretty","html:target/report/cucumber.html",
 //                "json:target/cucumber.json"}
 
