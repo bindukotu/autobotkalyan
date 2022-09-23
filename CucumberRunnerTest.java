@@ -4,9 +4,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/main/resources/features",
         glue = "stepDefintion"
-
-//       tags = "@aruna",
-//   plugin = {"pretty","html:target/report/cucumber.html",
+//        tags = "@JayasriTeamB",
+//        plugin = {"pretty","html:target/report/cucumber.html",
 //                "json:target/cucumber.json"}
 
 //        plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"},
