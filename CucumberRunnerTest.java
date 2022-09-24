@@ -4,7 +4,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/main/resources/features",
         glue = "stepDefintion"
-//        tags = "@Val",
+ //     tags ="@Valli2",
+
+
+>>>>>>> 693f7a1e352f059d885ce09e497350436b397314
 //        plugin = {"pretty","html:target/report/cucumber.html",
 //                "json:target/cucumber.json"}
 
