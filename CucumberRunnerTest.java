@@ -6,7 +6,9 @@ import io.cucumber.testng.CucumberOptions;
         glue = "stepDefintion"
 
 
+
 //       tags ="@nandanasnigdha",
+
 //        plugin = {"pretty","html:target/report/cucumber.html",
 //                "json:target/cucumber.json"}
 
