@@ -3,7 +3,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/main/resources/features",
-        glue = "stepDefintion"
+        glue = "Sridevi is making these changes"
 //        tags = "@Changed by Sridevi",
 
 //        plugin = {"pretty","html:target/report/cucumber.html",
