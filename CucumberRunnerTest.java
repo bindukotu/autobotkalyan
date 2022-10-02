@@ -1,10 +1,12 @@
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+giimport io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/main/resources/features",
-        glue = "Sridevi is making these changes"
-//        tags = "@Changed by Sridevi",
+        glue = "stepDefintion"
+
+//        tags = "@Changes made by Sridevi",
+
 //        plugin = {"pretty","html:target/report/cucumber.html",
 //                "json:target/cucumber.json"}
 
