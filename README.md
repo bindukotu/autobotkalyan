@@ -1,2 +1,1 @@
-code from orange
-code from apple
+code from cherry
