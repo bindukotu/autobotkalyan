@@ -4,8 +4,8 @@ gitimport io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
         glue = "stepDefintion"
-//       tags = "@Changes are for Sri",
-//       tags = "@Changes made by Lakshmi",
+//       tags = "@Changes are for Adi",
+//       tags = "@Changes made by Lakshmi2",
 //        plugin = {"pretty","html:target/report/cucumber.html",
 //                "json:target/cucumber.json"}
 //        plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"},
