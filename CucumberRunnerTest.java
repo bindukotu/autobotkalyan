@@ -5,10 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
         glue = "stepDefintion"
 
+//        tags = "@Sailaja1",
 //        tags = "@Sailaja2",
 //       tags = "@Changes are for Adi",
 //       tags = "@Changes made by Lakshmi2",
-
 //        plugin = {"pretty","html:target/report/cucumber.html",
 //                "json:target/cucumber.json"}
 //        plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"},
