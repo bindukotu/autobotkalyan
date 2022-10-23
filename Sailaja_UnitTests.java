@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class UnitTests {
-    @Test
+public class Sailaja_UnitTests {
+    @Test(priority = 1)
     public void getCall(){
         RestAssured.baseURI="https://reqres.in/";
         Response response=given().
@@ -17,7 +17,7 @@ public class UnitTests {
         Assert.assertEquals(statusCode,200);
 
     }
-    @Test
+    @Test(priority = 2)
     public void postCall(){
         RestAssured.baseURI="https://reqres.in/";
         Response response=given().
@@ -30,7 +30,7 @@ public class UnitTests {
         int statusCode=response.getStatusCode();
         Assert.assertEquals(statusCode,201);
     }
-    @Test
+    @Test(priority = 3)
     public void putCall(){
         RestAssured.baseURI="https://reqres.in/";
         Response response=given().
@@ -44,7 +44,7 @@ public class UnitTests {
         Assert.assertEquals(statusCode,200);
 
     }
-    @Test
+    @Test(priority = 4)
     public void deleteCall(){
         RestAssured.baseURI="https://reqres.in/";
         Response response=given().
