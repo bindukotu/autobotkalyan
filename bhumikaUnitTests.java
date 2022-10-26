@@ -39,7 +39,7 @@ public class bhumikaUnitTests {
                 when().
                 header("Content-type", "application/json").
                 body("{\n" +
-                        "    \"name\": \"anika\",\n" +
+                        "    \"name\": \"bhumika\",\n" +
                         "    \"job\": \"zion resident\"\n" +
                         "}").put("api/users/2");
         int statusCode = response.getStatusCode();
