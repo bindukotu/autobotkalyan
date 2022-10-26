@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
         , monochrome = true
         ,plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
         , glue = { "stepDefinitions" }
-        , tags= {"@POSTAPI"}
+        , tags= {"@GETAPI"}
         , strict = true)
 public class CucumberRunner extends AbstractTestNGCucumberTests
 {
