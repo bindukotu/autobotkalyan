@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import pojos.RegresRoot;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,19 +44,23 @@ public class stepDefintion
     @When("^I pass the endpoint for post Api call$")
     public void iPassTheEndpointForPostApiCall()
     {
-        Map<String,String> payload = new HashMap<>();
+        /*Map<String,String> payload = new HashMap<>();
         payload.put("name","morpheus");
         payload.put("job","leader");
 
         //We need to convert Java Objects into JSON respresentation for that we are using Gson
         String JsonPayload = new Gson().toJson(payload);
 
-        System.out.println(JsonPayload);
+        System.out.println(JsonPayload);*/
+
+        RegresRoot regresRoot = new RegresRoot();
+        regresRoot.setName("morpheus");
+        regresRoot.setJob("leader");
 
         response = given().
                 when().
                 header("Content-Type","application/json").
-                body(JsonPayload).
+                body(regresRoot).
                 post("api/users");
     }
 }
