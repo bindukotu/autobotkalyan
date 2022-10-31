@@ -1,5 +1,6 @@
+@petstore
 Feature:To test petstore.swagger.io application
-
+@POSTCREATEUSER
   Scenario: To test the create users in petstore
     Given I am on petstore application
     When I pass the endpoint for create users
