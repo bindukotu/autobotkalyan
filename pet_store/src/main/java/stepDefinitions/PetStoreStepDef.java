@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import com.google.gson.Gson;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,6 +9,9 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import pojoClasses.CreateUserPetStorePojo;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
@@ -45,11 +50,21 @@ public class PetStoreStepDef {
     public void iPassEndPointForLoginPage() {
         response=given().when().
                 header("Content-Type","application/json").
-                get("v2/user/login?username=(.*)&password=(.*)");
+                get("v2/user/login?username=(data.get(validUsername)&password=(data.get(validPassword)");
     }
 
-    @Then("I enter the {string}")
-    public void iEnterThe(String validUsername) {
+
+
+    @And("I enter the validUsername and validPassword")
+    public String iEnterTheValidUsernameAndValidPassword() {
+        Map<String,String> inputData=new HashMap<>();
+        inputData.put("validUsername","abcd@gmail.com");
+        inputData.put("validPassword","aeiou123");
+        //System.out.println(inputData);
+        // convert java object to json format using Gson
+        String data=new Gson().toJson(inputData);
+        //System.out.println(data);
+        return data;
 
     }
 }
