@@ -51,10 +51,7 @@ public class StepDefinition {
         response=given().
                 when().
                 header("Content-Type","application/json").
-                body("{\n" +
-                        "    \"name\": \"morpheus\",\n" +
-                        "    \"job\": \"leader\"\n" +
-                        "}").
+                body(jsonPayload).
                 post("/api/users");
 
 
@@ -77,10 +74,7 @@ public class StepDefinition {
         response=given().
                 when().
                 header("Content-Type","application/json").
-                body("{\n" +
-                        "    \"name\": \"morpheus\",\n" +
-                        "    \"job\": \"leader\"\n" +
-                        "}").
+                body(reqresPostCallPojo).
                 post("/api/users");
 
     }
