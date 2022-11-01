@@ -1,0 +1,326 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 371947000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Reqres application",
+            "match": {
+              "location": "stepDefinitions.stepDefintion.iAmOnReqresApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-22T01:27:24.397Z",
+        "line": 14,
+        "name": "To test the get api calls in reqres.in",
+        "description": "",
+        "id": "to-test-all-reqres.in-application;to-test-the-get-api-calls-in-reqres.in;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1116382000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I pass the api/users?page\u003d2 for get Api call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "api/users?page\u003d2",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iPassTheEndpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1344000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the statusCode 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iGetTheStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regres"
+          },
+          {
+            "name": "@GETAPI"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 43000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Reqres application",
+            "match": {
+              "location": "stepDefinitions.stepDefintion.iAmOnReqresApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-22T01:27:25.896Z",
+        "line": 15,
+        "name": "To test the get api calls in reqres.in",
+        "description": "",
+        "id": "to-test-all-reqres.in-application;to-test-the-get-api-calls-in-reqres.in;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 209525000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I pass the api/users/2 for get Api call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "api/users/2",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iPassTheEndpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the statusCode 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iGetTheStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regres"
+          },
+          {
+            "name": "@GETAPI"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 67000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Reqres application",
+            "match": {
+              "location": "stepDefinitions.stepDefintion.iAmOnReqresApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-22T01:27:26.108Z",
+        "line": 16,
+        "name": "To test the get api calls in reqres.in",
+        "description": "",
+        "id": "to-test-all-reqres.in-application;to-test-the-get-api-calls-in-reqres.in;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 203903000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I pass the api/users/23 for get Api call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "api/users/23",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iPassTheEndpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the statusCode 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iGetTheStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regres"
+          },
+          {
+            "name": "@GETAPI"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 47000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Reqres application",
+            "match": {
+              "location": "stepDefinitions.stepDefintion.iAmOnReqresApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-22T01:27:26.314Z",
+        "line": 17,
+        "name": "To test the get api calls in reqres.in",
+        "description": "",
+        "id": "to-test-all-reqres.in-application;to-test-the-get-api-calls-in-reqres.in;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 432439000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I pass the api/unknown for get Api call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "api/unknown",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iPassTheEndpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the statusCode 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.stepDefintion.iGetTheStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regres"
+          },
+          {
+            "name": "@GETAPI"
+          }
+        ]
+      }
+    ],
+    "name": "To test all Reqres.in application",
+    "description": "",
+    "id": "to-test-all-reqres.in-application",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Features/Reqres.feature",
+    "tags": [
+      {
+        "name": "@Regres",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
