@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import pojos.ReqresRoot;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,16 +37,20 @@ public class stepDefinition {
 
     @When("^I pass the endpoint for post api call$")
     public void iPassTheEndpointForPostApiCall() {
-        Map<String,String> payload = new HashMap<String,String>();
+       /* Map<String,String> payload = new HashMap<String,String>();
         payload.put("name","morpheus");
         payload.put("job","leader");
         String JsonPayload = new Gson().toJson(payload);
-        System.out.println(JsonPayload);
+        System.out.println(JsonPayload); */
+
+        ReqresRoot reqresRoot = new ReqresRoot();
+        reqresRoot.setName("morpheus");
+        reqresRoot.setJob("leader");
 
         response = given().
                 when().
                 header("Content-Type","application/json").
-                body(JsonPayload).
+                body(reqresRoot).
                 post("api/users");
     }
 }
