@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,11 +9,18 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import pojos.PetStoreRoot;
 import pojos.ReqresRoot;
+import pojos.Swagger.Category;
+import pojos.Swagger.Root;
+import pojos.Swagger.Tags;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
 public class PetStoreSteps {
     Response response;
+     Faker faker = new Faker();
     @Given("^I am on the petstore applicaton$")
     public void iAmOnThePetstoreApplicaton() {
         RestAssured.baseURI="https://petstore.swagger.io/";
@@ -43,4 +51,35 @@ public class PetStoreSteps {
         int actualStatusCode=response.getStatusCode();
         Assert.assertEquals(actualStatusCode,expectedStatusCode);
     }
+
+    @When("^I pass the endpoint for Pet object that needs to be added to the store$")
+    public void iPassTheEndpointForPetObjectThatNeedsToBeAddedToTheStore() {
+        Category category = new Category();
+        category.setName(faker.name().name());
+        category.setId(faker.number().numberBetween(1, 10));
+        Tags tags = new Tags();
+        tags.setId(faker.number().numberBetween(1, 10));
+        tags.setName(faker.name().name());
+        List<String> photoUrls = new ArrayList<>();
+        photoUrls.add(faker.name().name());
+        List<Tags> listtags = new ArrayList<>();
+        listtags.add(tags);
+
+        Root root = new Root();
+        root.setCategory(category);
+        root.setId(faker.number().numberBetween(1,10));
+        root.setTags(listtags);
+        root.setStatus("available");
+        root.setPhotoUrls(photoUrls);
+        root.setName(faker.name().name());
+
+        response = given().
+                when().
+                header("Content-Type","application/json").
+                body(root).
+                post("v2/pet").andReturn();
+        String res =response.getBody().asString();
+        System.out.println(res);
+    }
 }
+
