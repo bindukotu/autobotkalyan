@@ -1,0 +1,11 @@
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+        features = "src/main/resources/Features",
+        glue ={"stepDefinitions"},
+        plugin = {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"},
+        tags = "@EpicCreation")
+
+public class JiraRunner extends AbstractTestNGCucumberTests {
+}
